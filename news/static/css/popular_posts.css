@@ -1,0 +1,29 @@
+.card-title {
+    color: #2c3e50;
+    font-weight: bold;
+    font-size: 2rem; 
+}
+
+.card-title .fas {
+    font-size: 2rem; 
+}
+
+#loading-indicator {
+    width: 3rem;
+    height: 3rem;
+}
+
+.alert-info {
+    background-color: #d1ecf1;
+    border-color: #bee5eb;
+    color: #0c5460;
+}
+
+.card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}

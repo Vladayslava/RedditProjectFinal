@@ -1,0 +1,60 @@
+#sort {
+    min-width: 200px;
+}
+
+#loading-indicator .spinner-border {
+    width: 3rem;
+    height: 3rem;
+}
+
+#no-more-posts p {
+    font-style: italic;
+}
+
+.alert-warning {
+    background-color: #ffeeba;
+    border-color: #ffeeba;
+    color: #856404;
+}
+
+.form-control:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+}
+
+.post-item {
+    transition: transform 0.3s ease-in-out;
+}
+
+.post-item:hover {
+    transform: translateY(-5px);
+}
+
+.card-title a {
+    text-decoration: none;
+}
+
+.card-title a:hover {
+    color: #3498db !important;
+}
+
+.card-subtitle {
+    font-size: 0.85rem;
+}
+
+.card-footer .btn-group .btn {
+    transition: all 0.3s ease;
+}
+
+.card-footer .btn-group .btn:hover {
+    transform: scale(1.05);
+}
+
+.btn-outline-success:hover,
+.btn-outline-danger:hover {
+    color: #fff;
+}
+
+.text-muted i {
+    margin-right: 0.25rem;
+}

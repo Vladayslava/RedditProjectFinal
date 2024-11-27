@@ -1,0 +1,30 @@
+{% extends 'news/base.html' %}
+{% load static %}
+
+{% block title %}newsnow • Category {{ category.name }}{% endblock %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'css/category_posts.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="category-header">
+        <h1 class="category-title">
+            <i class="fas fa-folder-open mr-2"></i>{{ category.name }}
+        </h1>
+        <p class="category-description">Posts in this Category</p>
+    </div>
+
+    {% if posts %}
+    <div id="post-list" class="row mt-4">
+        {% include "news/posts_partial.html" %}
+    </div>
+    {% else %}
+    <div class="no-posts-message">
+        <i class="fas fa-exclamation-circle mr-2"></i>
+        <p>There are no posts in this category yet.</p>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}

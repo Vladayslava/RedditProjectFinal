@@ -1,0 +1,38 @@
+.card-title {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.card-subtitle a {
+    text-decoration: none;
+}
+
+.card-subtitle a:hover {
+    text-decoration: underline;
+}
+
+.btn-group .btn {
+    transition: all 0.3s ease;
+}
+
+.btn-group .btn:hover {
+    transform: scale(1.05);
+}
+
+.media img {
+    object-fit: cover;
+}
+
+.media-body h5 small {
+    font-size: 0.75rem;
+}
+
+form .btn-primary {
+    background-color: #3498db;
+    border-color: #3498db;
+}
+
+form .btn-primary:hover {
+    background-color: #2980b9;
+    border-color: #2980b9;
+}

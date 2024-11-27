@@ -1,0 +1,91 @@
+/* General Styles */
+body {
+    background-color: #f8f9fa; /* Light grey background */
+    color: #333; /* Dark text color */
+    font-family: 'Arial', sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+    border-bottom: 1px solid #ddd; /* Light grey border */
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #dc3545; /* Red color */
+}
+
+.navbar-nav .nav-link {
+    color: #555; /* Dark grey */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #dc3545; /* Red on hover */
+}
+
+/* Sidebar Styles */
+.sidebar {
+    background-color: #fff; /* White background for sidebar */
+    border-right: 1px solid #ddd; /* Light grey border */
+}
+
+.sidebar .nav-link {
+    color: #333; /* Dark text */
+}
+
+.sidebar .nav-link:hover {
+    background-color: #f8f9fa; /* Light grey on hover */
+}
+
+/* Post Detail Styles */
+.post-detail-container {
+    background-color: #fff; /* White background for post details */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.post-info p {
+    font-size: 0.9em; /* Smaller text for post info */
+    color: #555; /* Dark grey */
+}
+
+.post-actions button {
+    margin-left: 10px;
+}
+
+/* Comments Section */
+.comments {
+    margin-top: 20px;
+}
+
+.comments ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+}
+
+.comments li {
+    margin-bottom: 10px; /* Spacing between comments */
+}
+
+/* Button Styles */
+.btn {
+    border-radius: 20px; /* Rounded buttons */
+}
+
+.btn-outline-success {
+    color: #dc3545; /* Red text */
+    border-color: #dc3545; /* Red border */
+}
+
+.btn-outline-success:hover {
+    background-color: #dc3545; /* Red background on hover */
+    color: #fff; /* White text */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .sidebar {
+        display: none; /* Hide sidebar on small screens */
+    }
+}

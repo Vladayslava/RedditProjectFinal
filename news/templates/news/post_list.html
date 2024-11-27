@@ -1,0 +1,61 @@
+{% extends 'news/base.html' %}
+{% load static %}
+
+{% block title %}newsnow • Home{% endblock %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'css/post_list.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="row mb-4">
+        <div class="col-md-6 offset-md-3">
+            <form method="get" class="form-inline justify-content-center">
+                <select name="sort" id="sort" class="form-control" onchange="this.form.submit()">
+                    <option value="new" {% if sort_by == 'new' %}selected{% endif %}>Newest</option>
+                    <option value="positive" {% if sort_by == 'positive' %}selected{% endif %}>Most Positive Votes</option>
+                    <option value="negative" {% if sort_by == 'negative' %}selected{% endif %}>Most Negative Votes</option>
+                    <option value="comments" {% if sort_by == 'comments' %}selected{% endif %}>Most Comments</option>
+                </select>
+            </form>
+        </div>
+    </div>
+
+    {% if no_results %}
+        <div class="alert alert-warning text-center" role="alert">
+            <i class="fas fa-exclamation-triangle mr-2"></i>No results found. Try changing your query.
+        </div>
+    {% endif %}
+
+    <div id="post-list" class="row">
+        {% include "news/posts_partial.html" %}
+    </div>
+
+    <div class="row">
+        <div class="col-12 text-center">
+            <nav aria-label="Page navigation">
+                <ul class="pagination">
+                    {% if posts.has_previous %}
+                        <li class="page-item">
+                            <a class="page-link" href="?page={{ posts.previous_page_number }}&sort={{ sort_by }}">&laquo;</a>
+                        </li>
+                    {% endif %}
+                    {% for num in posts.paginator.page_range %}
+                        {% if posts.number == num %}
+                            <li class="page-item active"><span class="page-link">{{ num }}</span></li>
+                        {% else %}
+                            <li class="page-item"><a class="page-link" href="?page={{ num }}&sort={{ sort_by }}">{{ num }}</a></li>
+                        {% endif %}
+                    {% endfor %}
+                    {% if posts.has_next %}
+                        <li class="page-item">
+                            <a class="page-link" href="?page={{ posts.next_page_number }}&sort={{ sort_by }}">&raquo;</a>
+                        </li>
+                    {% endif %}
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+{% endblock %}
