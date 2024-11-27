@@ -78,13 +78,14 @@ WSGI_APPLICATION = 'news_site.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'ddllrnjhgj1u1l',
-        'USER': 'u2gli4l6b40je5',
-        'PASSWORD': 'p23f130d2f3a3fb0c62d5f00d5fadcc518b1f9a4559d2e17b4bfb28406ab84c3a',
-        'HOST': 'c3l5o0rb2a6o4l.cluster-czz5s0kz4scl.eu-west-1.rds.amazonaws.com',
+        'NAME': 'droop_polka_rage_125323',
+        'USER': 'udbwlsvmmpj',
+        'PASSWORD': 'IZERt9L5EKyK',
+        'HOST': 'ep-gentle-mountain-a23bxz6h-pooler.eu-central-1.aws.neon.tech',
         'PORT': '5432',
     }
 }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
