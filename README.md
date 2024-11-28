@@ -10,21 +10,51 @@ RedditProject provides an easy-to-navigate interface for users to discuss trendi
 
 
 ## Features
-1. **Login to your profile account**: on the site, the user can log in to an account or register for further use, if the user has forgotten his password, he can click on the forgot password button, after which the user will receive an email notification to change the password.
+1. **Login to your profile account**: on the site, the user can log in to an account or register for further use
+
 ![alt text](image.png)
+
+ if the user has forgotten his password, he can click on the forgot password button, after which the user will receive an email notification to change the password.
+
 ![alt text](image-1.png)
 ![alt text](image-2.png)
 ![alt text](image-3.png)
+
+After logging in, the user can see the icon and can also view his profile or log out of his account.
+
 ![alt text](image-5.png)
+
+When you click the profile button, the user can see all the information he entered during registration, as well as the posts that were posted, the categories in which they were posted. You can also see posts and votes under the avatar.
+
 ![alt text](image-6.png)
-1. **Post Creation and Interaction**: Users can create posts about news and current events. Each post supports likes and dislikes to show community engagement.
-2. **Commenting System**: Users can leave comments on posts to join discussions.
-3. **Category-based Navigation**: News posts are organized by categories, making it easier for users to find topics of interest.
-4. **Search Functionality**: Search through posts to quickly find relevant discussions.
-5. **User Profiles**: Users have profile pictures (avatars) and can view their activity history.
 
+Below is a button to change the profile photo. After the user has selected a photo, you need to click the "Change Avatar" button, after which the profile photo will change to the one you selected. After that you can see a link pointing to the photo that is currently selected.
 
+![alt text](image-7.png)
 
+2. **Post Creation and Interaction**: Users can create posts about news and current events. Each post supports likes and dislikes to show community engagement.
+
+![alt text](image-9.png)
+
+After publication, the user can see the edit button and delete the post. Comments to the post are also visible and can be added by the user himself.
+
+![alt text](image-10.png)
+
+3. **Commenting System**: Users can leave comments on posts to join discussions.
+
+![alt text](image-11.png)
+
+4. **Category-based Navigation**: News posts are organized by categories, making it easier for users to find topics of interest.
+
+![alt text](image-12.png)
+
+5. **Search Functionality**: Search through posts to quickly find relevant discussions.
+
+![alt text](image-13.png)
+
+## Testing
+
+![alt text](image-14.png)
 ## Technologies Used
 
 - **Backend**: Django, with SQLite for local development and PostgreSQL for production.
